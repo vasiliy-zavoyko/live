@@ -1,4 +1,4 @@
-package ru.zavoiko.live;
+package ru.zavoyko.live;
 
 import static javax.swing.SwingUtilities.invokeLater;
 

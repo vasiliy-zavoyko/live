@@ -1,4 +1,4 @@
-package ru.zavoiko.live;
+package ru.zavoyko.live;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,11 +1,8 @@
-package ru.zavoiko.live;
+package ru.zavoyko.live;
 
 import lombok.Getter;
 
 import javax.swing.*;
-
-
-import static ru.zavoiko.live.Config.SIZE;
 
 public class Box extends JPanel {
 
@@ -14,7 +11,7 @@ public class Box extends JPanel {
 
     public Box(int x, int y) {
         cell = new Cell();
-        setBounds(x * SIZE, y * SIZE, SIZE, SIZE);
+        setBounds(x * Config.SIZE, y * Config.SIZE, Config.SIZE, Config.SIZE);
         setBackground(cell.getStatus().getColor());
     }
 

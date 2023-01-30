@@ -1,4 +1,4 @@
-package ru.zavoiko.live;
+package ru.zavoyko.live;
 
 import javax.swing.*;
 
@@ -6,12 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
-import static ru.zavoiko.live.Config.*;
+import static ru.zavoyko.live.Config.*;
 
 public class Window implements Runnable {
 
     private JFrame frame;
-    private Box[][] boxes;
+    private ru.zavoyko.live.Box[][] boxes;
 
     @Override
     public void run() {
@@ -31,7 +31,7 @@ public class Window implements Runnable {
     }
 
     private void initBoxes() {
-        boxes = new Box[WIDTH][HEIGHT];
+        boxes = new ru.zavoyko.live.Box[WIDTH][HEIGHT];
         for (int x = 0; x < WIDTH; x++) {
             for (int y = 0; y < HEIGHT; y++) {
                 boxes[x][y] = new Box(x, y);
